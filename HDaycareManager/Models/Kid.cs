@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -12,11 +13,22 @@ namespace HDaycareManager.Models
         {
             Parents = new Collection<Parent>();
         }
-      //  public ApplicationUser Provider { get; set; }
+
+        [Required]
+        public string ProviderId { get; set; }
+
         public int Id  { get; set; }
-        public int FirstName { get; set; }
-        public int LastName { get; set; }
+
+        [Required]
+        public string FirstName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
+
+        [Required]
         public int Years { get; set; }
+
+        [Required]
         public int Months { get; set; }
 
         public ICollection<Parent> Parents { get; set; }
