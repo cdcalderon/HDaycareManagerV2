@@ -256,6 +256,10 @@
     <Compile Include="Migrations\201612031118161_OverrideConventionsForKidAttendaceParentStatus.Designer.cs">
       <DependentUpon>201612031118161_OverrideConventionsForKidAttendaceParentStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612031124548_PopulateKidsTable.cs" />
+    <Compile Include="Migrations\201612031124548_PopulateKidsTable.Designer.cs">
+      <DependentUpon>201612031124548_PopulateKidsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -355,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612031118161_OverrideConventionsForKidAttendaceParentStatus.resx">
       <DependentUpon>201612031118161_OverrideConventionsForKidAttendaceParentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612031124548_PopulateKidsTable.resx">
+      <DependentUpon>201612031124548_PopulateKidsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
